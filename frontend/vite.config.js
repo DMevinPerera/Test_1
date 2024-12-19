@@ -5,7 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 3000, // Specify the port number here
+    host: '0.0.0.0', // Exposes the app to the network
+    port: 3000,      // Optional, use the desired port
   },
   build: {
     rollupOptions: {
